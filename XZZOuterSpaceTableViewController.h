@@ -1,5 +1,5 @@
 //
-//  XZZViewController.h
+//  XZZOuterSpaceTableViewController.h
 //  Out of this world
 //
 //  Created by Zac on 5/12/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZZViewController : UIViewController
+@interface XZZOuterSpaceTableViewController : UITableViewController
 
 @end

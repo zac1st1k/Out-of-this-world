@@ -15,13 +15,13 @@
 		112301011A31C94A00F4E658 /* XZZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 112301001A31C94A00F4E658 /* XZZAppDelegate.m */; };
 		112301041A31C94A00F4E658 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112301021A31C94A00F4E658 /* Main_iPhone.storyboard */; };
 		112301071A31C94A00F4E658 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112301051A31C94A00F4E658 /* Main_iPad.storyboard */; };
-		1123010A1A31C94A00F4E658 /* XZZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112301091A31C94A00F4E658 /* XZZViewController.m */; };
 		1123010C1A31C94A00F4E658 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1123010B1A31C94A00F4E658 /* Images.xcassets */; };
 		112301131A31C94A00F4E658 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112301121A31C94A00F4E658 /* XCTest.framework */; };
 		112301141A31C94A00F4E658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112300F01A31C94900F4E658 /* Foundation.framework */; };
 		112301151A31C94A00F4E658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112300F41A31C94900F4E658 /* UIKit.framework */; };
 		1123011D1A31C94A00F4E658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1123011B1A31C94A00F4E658 /* InfoPlist.strings */; };
 		1123011F1A31C94A00F4E658 /* Out_of_this_worldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1123011E1A31C94A00F4E658 /* Out_of_this_worldTests.m */; };
+		1123012A1A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112301291A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +47,14 @@
 		112301001A31C94A00F4E658 /* XZZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZZAppDelegate.m; sourceTree = "<group>"; };
 		112301031A31C94A00F4E658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		112301061A31C94A00F4E658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		112301081A31C94A00F4E658 /* XZZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZZViewController.h; sourceTree = "<group>"; };
-		112301091A31C94A00F4E658 /* XZZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZZViewController.m; sourceTree = "<group>"; };
 		1123010B1A31C94A00F4E658 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		112301111A31C94A00F4E658 /* Out of this worldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Out of this worldTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		112301121A31C94A00F4E658 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1123011A1A31C94A00F4E658 /* Out of this worldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Out of this worldTests-Info.plist"; sourceTree = "<group>"; };
 		1123011C1A31C94A00F4E658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1123011E1A31C94A00F4E658 /* Out_of_this_worldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Out_of_this_worldTests.m; sourceTree = "<group>"; };
+		112301281A31CB2900F4E658 /* XZZOuterSpaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZZOuterSpaceTableViewController.h; path = ../XZZOuterSpaceTableViewController.h; sourceTree = "<group>"; };
+		112301291A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZZOuterSpaceTableViewController.m; path = ../XZZOuterSpaceTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 				112301001A31C94A00F4E658 /* XZZAppDelegate.m */,
 				112301021A31C94A00F4E658 /* Main_iPhone.storyboard */,
 				112301051A31C94A00F4E658 /* Main_iPad.storyboard */,
-				112301081A31C94A00F4E658 /* XZZViewController.h */,
-				112301091A31C94A00F4E658 /* XZZViewController.m */,
+				112301281A31CB2900F4E658 /* XZZOuterSpaceTableViewController.h */,
+				112301291A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m */,
 				1123010B1A31C94A00F4E658 /* Images.xcassets */,
 				112300F71A31C94A00F4E658 /* Supporting Files */,
 			);
@@ -255,8 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				112300FD1A31C94A00F4E658 /* main.m in Sources */,
+				1123012A1A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m in Sources */,
 				112301011A31C94A00F4E658 /* XZZAppDelegate.m in Sources */,
-				1123010A1A31C94A00F4E658 /* XZZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
