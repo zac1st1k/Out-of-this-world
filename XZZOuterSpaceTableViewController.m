@@ -32,6 +32,23 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.planets = [[NSMutableArray alloc] init];
+    NSString *planet1 = @"Mercury";
+    NSString *planet2 = @"Venus";
+    NSString *planet3 = @"Earth";
+    NSString *planet4 = @"Mars";
+    NSString *planet5 = @"Jupiter";
+    NSString *planet6 = @"Saturn";
+    NSString *planet7 = @"Uranus";
+    NSString *planet8 = @"Neptunes";
+    [self.planets addObject:planet1];
+    [self.planets addObject:planet2];
+    [self.planets addObject:planet3];
+    [self.planets addObject:planet4];
+    [self.planets addObject:planet5];
+    [self.planets addObject:planet6];
+    [self.planets addObject:planet7];
+    [self.planets addObject:planet8];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,26 +63,38 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    if (section == 0) {
+        return [self.planets count];
+    }
+    else {
+    return 4;
+    }
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+//    cell.textLabel.text = @"My first tableview";
+//    cell.textLabel.text = [NSString stringWithFormat:@"Row %i", indexPath.row];
+    cell.textLabel.text = [self.planets objectAtIndex:indexPath.row];
+    if (indexPath.section == 0) {
+        cell.backgroundColor = [UIColor redColor];
+    }
+    else{
+        cell.backgroundColor = [UIColor yellowColor];
+    }
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
