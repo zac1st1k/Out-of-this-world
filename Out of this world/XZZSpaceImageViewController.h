@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZZSpaceImageViewController : UIViewController
+//@interface XZZSpaceImageViewController : UIViewController
+
+@interface XZZSpaceImageViewController : UIViewController <UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) UIImageView *imageView;
 
 @end
