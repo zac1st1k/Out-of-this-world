@@ -34,7 +34,13 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
+    self.planets = [[NSMutableArray alloc] init];
+    for (NSMutableDictionary *planetData in [AstronomicalData allKnownPlanets])
+    {
+        NSString *imageNamge = [NSString stringWithFormat:@"%@.jpg", planetData[PLANET_NAME]];
+        XZZSpaceObject *planet = [[XZZSpaceObject alloc] initWithData:planetData andImage:[UIImage imageNamed:imageNamge]];
+        [self.planets addObject:planet];
+    }
 
 //    NSString *planet1 = @"Mercury";
 //    NSString *planet2 = @"Venus";
@@ -71,7 +77,7 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -92,15 +98,23 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    
 //    cell.textLabel.text = @"My first tableview";
 //    cell.textLabel.text = [NSString stringWithFormat:@"Row %i", indexPath.row];
-    cell.textLabel.text = [self.planets objectAtIndex:indexPath.row];
-    if (indexPath.section == 0) {
-        cell.backgroundColor = [UIColor redColor];
-    }
-    else{
-        cell.backgroundColor = [UIColor yellowColor];
-    }
+//    cell.textLabel.text = [self.planets objectAtIndex:indexPath.row];
+//    if (indexPath.section == 0) {
+//        cell.backgroundColor = [UIColor redColor];
+//    }
+//    else{
+//        cell.backgroundColor = [UIColor yellowColor];
+//    }
+    XZZSpaceObject *planet = [self.planets objectAtIndex:indexPath.row];
+    cell.textLabel.text = planet.name;
+    cell.detailTextLabel.text = planet.nickname;
+    cell.imageView.image = planet.spaceImage;
+    cell.backgroundColor = [UIColor clearColor];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.5 alpha:1];
     return cell;
 }
 
