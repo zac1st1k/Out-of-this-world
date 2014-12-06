@@ -22,6 +22,7 @@
 		1123011D1A31C94A00F4E658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1123011B1A31C94A00F4E658 /* InfoPlist.strings */; };
 		1123011F1A31C94A00F4E658 /* Out_of_this_worldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1123011E1A31C94A00F4E658 /* Out_of_this_worldTests.m */; };
 		1123012A1A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112301291A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m */; };
+		11D038321A329E2C009E21A8 /* AstronomicalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D038311A329E2C009E21A8 /* AstronomicalData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		1123011E1A31C94A00F4E658 /* Out_of_this_worldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Out_of_this_worldTests.m; sourceTree = "<group>"; };
 		112301281A31CB2900F4E658 /* XZZOuterSpaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XZZOuterSpaceTableViewController.h; path = ../XZZOuterSpaceTableViewController.h; sourceTree = "<group>"; };
 		112301291A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XZZOuterSpaceTableViewController.m; path = ../XZZOuterSpaceTableViewController.m; sourceTree = "<group>"; };
+		11D038301A329E2C009E21A8 /* AstronomicalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalData.h; sourceTree = "<group>"; };
+		11D038311A329E2C009E21A8 /* AstronomicalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 		112300F71A31C94A00F4E658 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11D038301A329E2C009E21A8 /* AstronomicalData.h */,
+				11D038311A329E2C009E21A8 /* AstronomicalData.m */,
 				112300F81A31C94A00F4E658 /* Out of this world-Info.plist */,
 				112300F91A31C94A00F4E658 /* InfoPlist.strings */,
 				112300FC1A31C94A00F4E658 /* main.m */,
@@ -257,6 +262,7 @@
 				112300FD1A31C94A00F4E658 /* main.m in Sources */,
 				1123012A1A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m in Sources */,
 				112301011A31C94A00F4E658 /* XZZAppDelegate.m in Sources */,
+				11D038321A329E2C009E21A8 /* AstronomicalData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +477,7 @@
 				112301241A31C94A00F4E658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		112301251A31C94A00F4E658 /* Build configuration list for PBXNativeTarget "Out of this worldTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +486,7 @@
 				112301271A31C94A00F4E658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
