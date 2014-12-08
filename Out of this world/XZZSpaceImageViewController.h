@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XZZSpaceObject.h"
 
 //@interface XZZSpaceImageViewController : UIViewController
 
@@ -14,5 +15,6 @@
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) XZZSpaceObject *spaceObject;
 
 @end

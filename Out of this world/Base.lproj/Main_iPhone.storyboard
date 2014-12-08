@@ -60,7 +60,7 @@
                         <viewControllerLayoutGuide type="top" id="XMv-Jk-XYu"/>
                         <viewControllerLayoutGuide type="bottom" id="5po-sM-MIj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XXK-OK-sez" customClass="OWSpaceImageViewController">
+                    <view key="view" contentMode="scaleToFill" id="XXK-OK-sez">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>

@@ -9,6 +9,7 @@
 #import "XZZOuterSpaceTableViewController.h"
 #import "AstronomicalData.h"
 #import "XZZSpaceObject.h"
+#import "XZZSpaceImageViewController.h"
 
 @interface XZZOuterSpaceTableViewController ()
 
@@ -65,6 +66,20 @@
 //    NSLog(@"%@", myNumber);
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+//    NSLog(@"%@", sender);
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        if ([segue.destinationViewController isKindOfClass:[XZZSpaceImageViewController class]]) {
+//            NSLog(@"%@", sender);
+            XZZSpaceImageViewController *nextViewController = segue.destinationViewController;
+            NSIndexPath *senderPath = [self.tableView indexPathForCell:sender];
+            XZZSpaceObject *selectedObject = self.planets[senderPath.row];
+            nextViewController.spaceObject = selectedObject;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
