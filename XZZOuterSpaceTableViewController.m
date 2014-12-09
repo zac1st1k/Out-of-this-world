@@ -10,6 +10,7 @@
 #import "AstronomicalData.h"
 #import "XZZSpaceObject.h"
 #import "XZZSpaceImageViewController.h"
+#import "XZZSpaceDataViewController.h"
 
 @interface XZZOuterSpaceTableViewController ()
 
@@ -78,7 +79,14 @@
             nextViewController.spaceObject = selectedObject;
         }
     }
-    
+    if ([sender isKindOfClass:[NSIndexPath class]]) {
+        if ([segue.destinationViewController isKindOfClass:[XZZSpaceDataViewController class]]){
+            XZZSpaceDataViewController *targetViewController = segue.destinationViewController;
+            NSIndexPath *path = sender;
+            XZZSpaceObject *selectedObject = self.planets[path.row];
+            targetViewController.spaceObject = selectedObject;
+        }
+    }
 }
 - (void)didReceiveMemoryWarning
 {
@@ -99,12 +107,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    if (section == 0) {
-        return [self.planets count];
-    }
-    else {
-    return 4;
-    }
+    return [self.planets count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -131,6 +134,13 @@
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.5 alpha:1];
     return cell;
+}
+
+#pragma mark UITableView  Delegate
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"push to space data" sender:indexPath];
+//    NSLog(@"INDEX %i", indexPath.row);
 }
 
 /*
