@@ -75,15 +75,26 @@
 //            NSLog(@"%@", sender);
             XZZSpaceImageViewController *nextViewController = segue.destinationViewController;
             NSIndexPath *senderPath = [self.tableView indexPathForCell:sender];
-            XZZSpaceObject *selectedObject = self.planets[senderPath.row];
+            XZZSpaceObject *selectedObject;
+            if (senderPath.section == 0) {
+                selectedObject = self.planets[senderPath.row];
+            }
+            else if (senderPath.section == 1){
+                selectedObject = self.addedSpaceObjects[senderPath.row];
+            }
             nextViewController.spaceObject = selectedObject;
         }
     }
     if ([sender isKindOfClass:[NSIndexPath class]]) {
         if ([segue.destinationViewController isKindOfClass:[XZZSpaceDataViewController class]]){
             XZZSpaceDataViewController *targetViewController = segue.destinationViewController;
-            NSIndexPath *path = sender;
-            XZZSpaceObject *selectedObject = self.planets[path.row];
+            NSIndexPath *senderPath = sender;
+            XZZSpaceObject *selectedObject;
+            if (senderPath.section == 0) {
+                selectedObject = self.planets[senderPath.row];
+            } else if (senderPath.section == 1){
+                selectedObject = self.addedSpaceObjects[senderPath.row];
+            }
             targetViewController.spaceObject = selectedObject;
         }
     }
@@ -152,7 +163,10 @@
     // Configure the cell...
     if (indexPath.section == 1) {
         //use new space object to customize our cell
-        
+        XZZSpaceObject *planet = [self.addedSpaceObjects objectAtIndex:indexPath.row];
+        cell.textLabel.text = planet.name;
+        cell.detailTextLabel.text = planet.nickname;
+        cell.imageView.image = planet.spaceImage;
     }
     else{
 //    cell.textLabel.text = @"My first tableview";
