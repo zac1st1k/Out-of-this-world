@@ -28,11 +28,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Jupiter.jpg"]];
-    self.imageView = [[UIImageView alloc] initWithImage:self.spaceObject.spaceImage];
-    self.scrollView.contentSize = self.imageView.frame.size;
-    [self.scrollView addSubview:self.imageView];
-    self.scrollView.delegate = self;
     
+    self.imageView = [[UIImageView alloc] initWithImage:self.spaceObject.spaceImage];
+//    self.scrollView.contentSize = self.imageView.frame.size;
+//    CGRect rect =[[UIScreen mainScreen] bounds];
+//    CGSize size = rect.size;
+    self.imageView.frame = CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height);
+    self.imageView.contentMode = UIViewContentModeScaleToFill;
+    [self.scrollView addSubview:self.imageView];
+    self.scrollView.contentSize = self.imageView.frame.size;
+    self.scrollView.bounces = YES;
+
+//    self.scrollView.layer.contents = (id) self.spaceObject.spaceImage.CGImage;
+    self.scrollView.delegate = self;
     self.scrollView.maximumZoomScale = 2.0;
     self.scrollView.minimumZoomScale = 0.5;
 }

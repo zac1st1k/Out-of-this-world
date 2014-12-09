@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1112D3811A35B0EA00B97BFF /* XZZSpaceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1112D3801A35B0EA00B97BFF /* XZZSpaceDataViewController.m */; };
 		112300F11A31C94900F4E658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112300F01A31C94900F4E658 /* Foundation.framework */; };
 		112300F31A31C94900F4E658 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112300F21A31C94900F4E658 /* CoreGraphics.framework */; };
 		112300F51A31C94900F4E658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112300F41A31C94900F4E658 /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1112D37F1A35B0EA00B97BFF /* XZZSpaceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZSpaceDataViewController.h; sourceTree = "<group>"; };
+		1112D3801A35B0EA00B97BFF /* XZZSpaceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZSpaceDataViewController.m; sourceTree = "<group>"; };
 		112300ED1A31C94900F4E658 /* Out of this world.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out of this world.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		112300F01A31C94900F4E658 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		112300F21A31C94900F4E658 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -110,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1112D3821A35B0F900B97BFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11E7CE561A32B582003B635C /* XZZSpaceObject.h */,
+				11E7CE571A32B582003B635C /* XZZSpaceObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		112300E41A31C94900F4E658 = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +163,9 @@
 				112301291A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m */,
 				116941E81A32EA41007AA6BC /* XZZSpaceImageViewController.h */,
 				116941E91A32EA41007AA6BC /* XZZSpaceImageViewController.m */,
-				11E7CE561A32B582003B635C /* XZZSpaceObject.h */,
-				11E7CE571A32B582003B635C /* XZZSpaceObject.m */,
+				1112D37F1A35B0EA00B97BFF /* XZZSpaceDataViewController.h */,
+				1112D3801A35B0EA00B97BFF /* XZZSpaceDataViewController.m */,
+				1112D3821A35B0F900B97BFF /* Model */,
 				1123010B1A31C94A00F4E658 /* Images.xcassets */,
 				112300F71A31C94A00F4E658 /* Supporting Files */,
 			);
@@ -312,6 +325,7 @@
 				112300FD1A31C94A00F4E658 /* main.m in Sources */,
 				1123012A1A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m in Sources */,
 				116941EA1A32EA41007AA6BC /* XZZSpaceImageViewController.m in Sources */,
+				1112D3811A35B0EA00B97BFF /* XZZSpaceDataViewController.m in Sources */,
 				112301011A31C94A00F4E658 /* XZZAppDelegate.m in Sources */,
 				11E7CE581A32B582003B635C /* XZZSpaceObject.m in Sources */,
 				11D038321A329E2C009E21A8 /* AstronomicalData.m in Sources */,
