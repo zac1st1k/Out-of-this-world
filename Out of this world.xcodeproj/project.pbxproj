@@ -25,6 +25,7 @@
 		1123012A1A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112301291A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m */; };
 		116941EA1A32EA41007AA6BC /* XZZSpaceImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116941E91A32EA41007AA6BC /* XZZSpaceImageViewController.m */; };
 		11D038321A329E2C009E21A8 /* AstronomicalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D038311A329E2C009E21A8 /* AstronomicalData.m */; };
+		11DB332B1A36FFFC00FA2418 /* XZZAddSpaceObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DB332A1A36FFFC00FA2418 /* XZZAddSpaceObjectViewController.m */; };
 		11E7CE4C1A32B55A003B635C /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11E7CE421A32B55A003B635C /* Earth.jpg */; };
 		11E7CE4D1A32B55A003B635C /* EinsteinRing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11E7CE431A32B55A003B635C /* EinsteinRing.jpg */; };
 		11E7CE4E1A32B55A003B635C /* Jupiter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11E7CE441A32B55A003B635C /* Jupiter.jpg */; };
@@ -75,6 +76,8 @@
 		116941E91A32EA41007AA6BC /* XZZSpaceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZSpaceImageViewController.m; sourceTree = "<group>"; };
 		11D038301A329E2C009E21A8 /* AstronomicalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalData.h; sourceTree = "<group>"; };
 		11D038311A329E2C009E21A8 /* AstronomicalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalData.m; sourceTree = "<group>"; };
+		11DB33291A36FFFC00FA2418 /* XZZAddSpaceObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZAddSpaceObjectViewController.h; sourceTree = "<group>"; };
+		11DB332A1A36FFFC00FA2418 /* XZZAddSpaceObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZAddSpaceObjectViewController.m; sourceTree = "<group>"; };
 		11E7CE421A32B55A003B635C /* Earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth.jpg; sourceTree = "<group>"; };
 		11E7CE431A32B55A003B635C /* EinsteinRing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EinsteinRing.jpg; sourceTree = "<group>"; };
 		11E7CE441A32B55A003B635C /* Jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jupiter.jpg; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				116941E91A32EA41007AA6BC /* XZZSpaceImageViewController.m */,
 				1112D37F1A35B0EA00B97BFF /* XZZSpaceDataViewController.h */,
 				1112D3801A35B0EA00B97BFF /* XZZSpaceDataViewController.m */,
+				11DB33291A36FFFC00FA2418 /* XZZAddSpaceObjectViewController.h */,
+				11DB332A1A36FFFC00FA2418 /* XZZAddSpaceObjectViewController.m */,
 				1112D3821A35B0F900B97BFF /* Model */,
 				1123010B1A31C94A00F4E658 /* Images.xcassets */,
 				112300F71A31C94A00F4E658 /* Supporting Files */,
@@ -326,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				112300FD1A31C94A00F4E658 /* main.m in Sources */,
+				11DB332B1A36FFFC00FA2418 /* XZZAddSpaceObjectViewController.m in Sources */,
 				1123012A1A31CB2900F4E658 /* XZZOuterSpaceTableViewController.m in Sources */,
 				116941EA1A32EA41007AA6BC /* XZZSpaceImageViewController.m in Sources */,
 				1112D3811A35B0EA00B97BFF /* XZZSpaceDataViewController.m in Sources */,
