@@ -51,11 +51,25 @@
 - (IBAction)cancelButtonPressed:(id)sender
 {
     [self.delegate didCancel];
+//    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)addButtonPressed:(id)sender
 {
-    [self.delegate addSpaceObject];
+    XZZSpaceObject *newSpaceObject = [self returnNewSpaceObject];
+    [self.delegate addSpaceObject:newSpaceObject];
+}
+
+- (XZZSpaceObject *)returnNewSpaceObject
+{
+    XZZSpaceObject *addSpaceObject = [[XZZSpaceObject alloc] init];
+    addSpaceObject.name = self.nameTextField.text;
+    addSpaceObject.nickname = self.nicknameTextField.text;
+    addSpaceObject.diameter = [self.diameterTextField.text floatValue];
+    addSpaceObject.temperature = [self.temperatureTextField.text floatValue];
+    addSpaceObject.numberOfMoons = [self.numberOfMoonsTextField.text intValue];
+    addSpaceObject.interestFact = self.interestingFactTextField.text;
+    return addSpaceObject;
 }
 
 @end

@@ -11,7 +11,7 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="NDI-xb-8UF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="471-Oy-X7v" detailTextLabel="FqS-8e-ZRr" style="IBUITableViewCellStyleSubtitle" id="dPC-TZ-QCn">
                                 <rect key="frame" x="0.0" y="119" width="320" height="44"/>
@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" title="Solar System Planets" id="wYg-dl-SLz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1Oa-R8-Doh">
                             <connections>
-                                <segue destination="zro-0X-nfG" kind="push" id="wSe-8g-wf7"/>
+                                <segue destination="zro-0X-nfG" kind="modal" id="wSe-8g-wf7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

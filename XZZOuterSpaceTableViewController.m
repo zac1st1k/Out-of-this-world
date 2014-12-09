@@ -106,10 +106,16 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)addSpaceObject
+- (void)addSpaceObject:(XZZSpaceObject *)spaceObject
 {
+    if (!self.addedSpaceObjects) {
+        self.addedSpaceObjects = [[NSMutableArray alloc] init];
+    }
+    [self.addedSpaceObjects addObject:spaceObject];
     NSLog(@"addSpaceObject");
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -171,6 +177,7 @@
 }
 
 #pragma mark - UITableView  Delegate
+
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"push to space data" sender:indexPath];
