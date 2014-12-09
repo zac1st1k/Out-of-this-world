@@ -48,10 +48,14 @@
 }
 */
 
-- (IBAction)cancelButtonPressed:(id)sender {
+- (IBAction)cancelButtonPressed:(id)sender
+{
+    [self.delegate didCancel];
 }
 
-- (IBAction)addButtonPressed:(id)sender {
+- (IBAction)addButtonPressed:(id)sender
+{
+    [self.delegate addSpaceObject];
 }
 
 @end

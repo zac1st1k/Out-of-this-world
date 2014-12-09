@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol XZZAddSpaceObjectViewControllerDelegate <NSObject>
+
+@required
+
+- (void)addSpaceObject;
+- (void)didCancel;
+
+@end
+
 @interface XZZAddSpaceObjectViewController : UIViewController
+
+@property (weak, nonatomic) id <XZZAddSpaceObjectViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *nicknameTextField;

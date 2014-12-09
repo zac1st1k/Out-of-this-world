@@ -87,11 +87,29 @@
             targetViewController.spaceObject = selectedObject;
         }
     }
+    if ([segue.destinationViewController isKindOfClass:[XZZAddSpaceObjectViewController class]]) {
+        XZZAddSpaceObjectViewController *addSpaceObjectVC = segue.destinationViewController;
+        addSpaceObjectVC.delegate = self;
+    }
 }
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - XZZAddSpaceObjectViewController Delegate
+
+- (void)didCancel
+{
+    NSLog(@"didCancel");
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)addSpaceObject
+{
+    NSLog(@"addSpaceObject");
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Table view data source
@@ -152,7 +170,7 @@
     return cell;
 }
 
-#pragma mark UITableView  Delegate
+#pragma mark - UITableView  Delegate
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"push to space data" sender:indexPath];
