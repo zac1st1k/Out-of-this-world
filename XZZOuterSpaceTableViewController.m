@@ -18,6 +18,24 @@
 
 @implementation XZZOuterSpaceTableViewController
 
+#pragma mark - Lazy Instantiation of Properties
+
+- (NSMutableArray *)planets
+{
+    if (!_planets) {
+        _planets = [[NSMutableArray alloc] init];
+    }
+    return _planets;
+}
+
+- (NSMutableArray *)spaceObjects
+{
+    if (!_addedSpaceObjects) {
+        _addedSpaceObjects = [[NSMutableArray alloc] init];
+    }
+    return _addedSpaceObjects;
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
