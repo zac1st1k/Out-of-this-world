@@ -51,7 +51,7 @@
             break;
         case 1:
             cell.textLabel.text = @"Diameter (km):";
-            cell.textLabel.text = [NSString stringWithFormat:@"%f", self.spaceObject.diameter];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%f", self.spaceObject.diameter];
             break;
         case 2:
             cell.textLabel.text = @"Gravitational Force:";
@@ -76,6 +76,7 @@
         case 7:
             cell.textLabel.text = @"Interesting Fact:";
             cell.detailTextLabel.text = self.spaceObject.interestFact;
+            break;
         default:
             break;
     }

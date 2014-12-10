@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XZZSpaceObject.h";
+#import "XZZSpaceObject.h"
 
 @protocol XZZAddSpaceObjectViewControllerDelegate <NSObject>
 
